@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<img src="{{birthday.img.url}}">
+<h1>{{birthday.name}} Cake</h1>
+<h3>{{birthday.cost}}</h3>
+<h4>{{birthday.bio}}</h4>
+{% endblock content %}

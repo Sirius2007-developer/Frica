@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1 class="text-center">Categoryni tahrirlash sahifasiga xush kelibsiz!</h1>
+<form method="post" enctype="multipart/form-data">{%csrf_token%}
+    {{form.as_p}}
+    <button type="submit" class="btn btn-danger">Tahrirlash</button>
+</form>
+{% endblock content %}

@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1 class="text-center">Foydalanuvchi ma'lumotlarini o'zgartirish</h1>
+<p>Siz o'zingiz haqingizdagi ma'lumotlarni quyidagi formani to'ldirish orqali o'zgartirishingiz mumkin!</p>
+<form method="post">{% csrf_token %}
+    {{ user_form.as_p }}
+    {{ profile_form.as_p }}
+    <button type="submit">O'zgarishlarni saqlash</button>
+</form>
+{% endblock content %}

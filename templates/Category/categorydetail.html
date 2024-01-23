@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<img src="{{category.img.url}}">
+<h1>{{category.name}}</h1>
+<h3>{{category.bio}}</h3>
+<h4>{{category.full_info}}</h4>
+{% endblock content %}

@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1 class="text-center">Agent ni o'chirish sahifasiga xush kelibsiz!</h1>
+<form method="post">{%csrf_token%}
+    <h2>{{team.name}} sarlavhali categoryni o'chirishni xohlaysizmi?</h2>
+    <button type="submit" class="btn btn-danger ml-2"><h4>Tasdiqlayman</h4></button>
+</form>
+{% endblock content %}

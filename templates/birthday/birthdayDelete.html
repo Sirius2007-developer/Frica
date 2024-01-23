@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Bu yerda Birthday cake larni o'chiramiz!</h1>
+<form method="post">{% csrf_token %}
+    <h2>{{birthday.name}} sarlavhali Cake ni o'chirishni xohlaysizmi?</h2>
+    <button type="submit" class="btn btn-danger ml-2"><h3>Tasdiqlayman</h3></button>
+</form>
+{% endblock content %}

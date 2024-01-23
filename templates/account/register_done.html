@@ -1,0 +1,5 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2 class="text-center">{{new_user.first_name}} tabriklaymiz siz ro'yxatdan o'tdingiz!</h2>
+<p>Endi saytga <a href="{% url 'login' %}"><em>login</em></a> qilishingiz mumkin.</p>
+{% endblock content %}

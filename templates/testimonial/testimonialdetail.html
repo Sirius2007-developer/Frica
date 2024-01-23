@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<img src="{{testimonial.img.url}}">
+<h1>{{testimonial.name}}</h1>
+<h3>{{testimonial.job}}</h3>
+<h4>{{testimonial.comment}}</h4>
+{% endblock content %}

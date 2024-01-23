@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1 class="text-center">Login sahifasiga xush kelibsiz!</h1>
+<h4>Iltimos, Login qilish uchun ushbu formani to'diring!</h4>
+<form method="post">{%csrf_token%}
+    {{form.as_p}}
+    <button type="submit">Login</button>
+</form>
+{% endblock content %}
